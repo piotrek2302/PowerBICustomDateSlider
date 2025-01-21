@@ -1,0 +1,120 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Min Date",
+            "name": "mindate",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Max Date",
+            "name": "maxdate",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Filter Column",
+            "name": "filtercolumn",
+            "kind": "Measure"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "mindate": {
+                        "max": 1
+                    },
+                    "maxdate": {
+                        "max": 1
+                    },
+                    "filtercolumn": {
+                        "max": 1
+                    }
+                }
+            ],
+            "table": {
+                "rows": {
+                    "select": [
+                        {
+                            "for": {
+                                "in": "mindate"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "maxdate"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "filtercolumn"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "objects": {
+        "enableAxis": {
+            "properties": {
+                "show": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fill": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "colorSelector": {
+            "properties": {
+                "fill": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "general": {
+            "displayName": "General",
+            "displayNameKey": "formattingGeneral",
+            "properties": {
+                "filter": {
+                    "type": {
+                        "filter": true
+                    }
+                }
+            }
+        },
+        "cursor": {
+            "properties": {
+                "show": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "color": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "privileges": []
+}
