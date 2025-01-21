@@ -1,0 +1,26 @@
+{
+    "visual": {
+        "name": "improvedDashboardslicerSingle",
+        "displayName": "Improved Dashboard Slicer - Single Slider",
+        "guid": "improvedDashboardslicerSingle",
+        "visualClassName": "SliderVisual",
+        "version": "1.1.0.0",
+        "description": "An improved date slicer with 1 slider knob that shows month and year",
+        "supportUrl": "https://github.com/piotrek2302",
+        "gitHubUrl": "https://github.com/piotrek2302"
+    },
+    "apiVersion": "5.3.0",
+    "author": {
+        "name": "Piotr Kramer",
+        "email": "piotrkramer@gmail.com"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": [],
+    "version": "1.0.0.0"
+}

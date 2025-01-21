@@ -1,0 +1,85 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Year-Month",
+            "name": "yearMonth",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Date",
+            "name": "date",
+            "kind": "Measure"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "yearMonth": {
+                        "max": 1
+                    },
+                    "date": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "bind": {
+                        "to": "yearMonth"
+                    }
+                },
+                "values":{
+                    "select": [
+                        {"bind": {"to": "date"}}
+                    ]
+                }
+            }
+        }
+    ],
+    "objects": {
+        "enableAxis": {
+            "properties": {
+                "show": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fill": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "colorSelector": {
+            "properties": {
+                "fill": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "general": {
+            "displayName": "General",
+            "displayNameKey": "formattingGeneral",
+            "properties": {
+                "filter": {
+                    "type": {
+                        "filter": true
+                    }
+                }
+            }
+        }
+    },
+    "privileges": []
+}
