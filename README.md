@@ -1,4 +1,5 @@
 # Introduction 
+This is a custom Microsoft PowerBI visual.
 Consists of two custom slicer visuals. One is a normal slider that filters by a specific value, used to show threat estimations of a single month in the Threat Radar. The other slicer is also a slicer, but this one has 2 handles and filters between two values. The values are of string type, but can be used with dates as long as it has year before month before day etc.
 
 # Getting Started
