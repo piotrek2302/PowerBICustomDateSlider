@@ -1,6 +1,6 @@
 # Introduction 
 This is a custom Microsoft PowerBI visual.
-Consists of two custom slicer visuals. One is a normal slider that filters by a specific value, used to show threat estimations of a single month in the Threat Radar. The other slicer is also a slicer, but this one has 2 handles and filters between two values. The values are of string type, but can be used with dates as long as it has year before month before day etc.
+It consists of two custom slicer visuals. One is a normal slider that filters by a specific value, used to show threat estimations of a single month in the Threat Radar. The other slicer is also a slicer, but this one has 2 handles and filters between two values. The values are of string type, but can be used with dates as long as it has year before month before day etc.
 
 # Getting Started
 After downloading the files and putting it into a folder of your choice, follow these steps:
@@ -10,7 +10,7 @@ After downloading the files and putting it into a folder of your choice, follow 
 4. run `npm install`
 5. navigate to the correct folder "improvedDashboardSlicerSingle" for single slicer or "improvedDashboardSlicer" for the double slider using your command line
 6. run `pbiviz start` to start a local developing server
-7. in a online Power BI service report insert a Developer Visual to connect to the server
+7. in am online Power BI service report insert a Developer Visual to connect to the server
 8. Press Refresh or Play symbol and see the result
 
 # How to use single date slicer in PowerBI
