@@ -10,7 +10,7 @@ After downloading the files and putting it into a folder of your choice, follow 
 4. run `npm install`
 5. navigate to the correct folder "improvedDashboardSlicerSingle" for single slicer or "improvedDashboardSlicer" for the double slider using your command line
 6. run `pbiviz start` to start a local developing server
-7. in am online Power BI service report insert a Developer Visual to connect to the server
+7. in an online Power BI service report insert a Developer Visual to connect to the server
 8. Press Refresh or Play symbol and see the result
 
 # How to use single date slicer in PowerBI
